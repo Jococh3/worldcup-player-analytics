@@ -1,5 +1,6 @@
 # ⚽ World Cup Player Analytics
 
+<<<<<<< HEAD
 Final project for **DSCI-D532 Applied Database Technologies**.
 
 ## Project Overview
@@ -21,19 +22,23 @@ World Cup Player Analytics is a Flask-based web application for exploring FIFA W
 
 ### Dashboard Overview
 
-![Dashboard Overview](screenshots/dashboard-overview.png)
+![Dashboard Overview](<screenshots/Dashboard Prototype 1.png>)
 
 ### Dashboard Analytics
 
-![Dashboard Analytics](screenshots/dashboard-analytics.png)
+![Dashboard Analytics](<screenshots/Dashboard Prototype 2.png>)
 
 ### Player Details
 
-![Player Details](screenshots/player-details.png)
+![Player Details](<screenshots/Player Details 1.png>)
+
+### Additional Player Details
+
+![Player Details](<screenshots/Player Details 2.png>)
 
 ### Scouting Notes (CRUD)
 
-![Scouting Notes](screenshots/scouting-notes-crud.png)
+![Scouting Notes](<screenshots/Scouting Notes CRUD.png>)
 
 ## Technologies Used
 
@@ -77,3 +82,59 @@ https://github.com/Jococh3/worldcup-player-analytics
 
 Indiana University  
 MSDS – Applied Database Technologies
+=======
+Final project for **DSCI-D532 Applied Database Technologies** at Indiana University.
+
+## Overview
+
+This application provides an interactive dashboard for exploring FIFA World Cup player performance data. Users can search players, analyze statistics, visualize trends, and create scouting notes.
+
+## Features
+
+- Interactive dashboard
+- Plotly visualizations
+- Player search and filtering
+- Individual player profiles
+- Match history
+- Performance charts
+- Scouting Notes CRUD functionality
+- Responsive Bootstrap interface
+
+## Technologies
+
+- Python
+- Flask
+- Pandas
+- Plotly
+- Bootstrap
+- SQLite (development)
+- MySQL (planned)
+
+## Running the Project
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Start the application:
+
+```bash
+python app.py
+```
+
+Open your browser:
+
+```
+http://127.0.0.1:5000
+```
+
+## Authors
+
+Joshua Cochran
+
+Jack Williams
+
+Indiana University MS Data Science
+>>>>>>> 36d1a0864dd59d049da1bd9d9f49e69626f4207f
