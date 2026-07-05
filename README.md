@@ -50,6 +50,7 @@ http://127.0.0.1:5000
 ## Authors
 
 Joshua Cochran
+
 Jack Williams
 
 Indiana University MS Data Science
