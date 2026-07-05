@@ -25,7 +25,7 @@ This application provides an interactive dashboard for exploring FIFA World Cup 
 - Plotly
 - Bootstrap
 - SQLite (development)
-- PostgreSQL (planned)
+- MySQL (planned)
 
 ## Running the Project
 
