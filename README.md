@@ -1,70 +1,79 @@
-# \# World Cup Player Analytics
+# ⚽ World Cup Player Analytics
 
-# 
+Final project for **DSCI-D532 Applied Database Technologies**.
 
-# Final project for DSCI-D532 Applied Database Technologies.
+## Project Overview
 
-# 
+World Cup Player Analytics is a Flask-based web application for exploring FIFA World Cup player performance data. The application allows users to view dashboard summaries, search players, inspect individual player profiles, visualize performance trends, and create scouting notes.
 
-# \## Project Overview
+## Current Features
 
-# 
+- Dashboard with player, team, and match summaries
+- Interactive Plotly visualizations
+- Player search and position filtering
+- Individual player detail pages
+- Player match history
+- Player performance charts
+- Scouting Notes CRUD functionality
+- Responsive Bootstrap interface
 
-# World Cup Player Analytics is a Flask-based web application for exploring FIFA World Cup player performance data. The app allows users to view dashboard summaries, search players, inspect individual player profiles, visualize performance trends, and create scouting notes.
+## Screenshots
 
-# 
+### Dashboard Overview
 
-# \## Current Features
+![Dashboard Overview](screenshots/dashboard-overview.png)
 
-# 
+### Dashboard Analytics
 
-# \- Dashboard with player, team, and match totals
+![Dashboard Analytics](screenshots/dashboard-analytics.png)
 
-# \- Interactive Plotly visualizations
+### Player Details
 
-# \- Player search and position filtering
+![Player Details](screenshots/player-details.png)
 
-# \- Individual player detail pages
+### Scouting Notes (CRUD)
 
-# \- Player match history tables
+![Scouting Notes](screenshots/scouting-notes-crud.png)
 
-# \- Player performance chart by match
+## Technologies Used
 
-# \- Scouting Notes CRUD functionality
+- Python
+- Flask
+- Pandas
+- Plotly
+- Bootstrap
+- SQLite (prototype CRUD functionality)
+- PostgreSQL (planned final database)
+- Git & GitHub
 
-# \- Bootstrap-styled interface
+## How to Run
 
-# 
+Install dependencies:
 
-# \## Technologies Used
+```bash
+pip install -r requirements.txt
+```
 
-# 
+Start the Flask application:
 
-# \- Python
+```bash
+python app.py
+```
 
-# \- Flask
+Open your browser and navigate to:
 
-# \- Pandas
+```
+http://127.0.0.1:5000
+```
 
-# \- Plotly
+## Repository
 
-# \- Bootstrap
+https://github.com/Jococh3/worldcup-player-analytics
 
-# \- SQLite for development CRUD prototype
+## Authors
 
-# \- PostgreSQL planned for final database implementation
+- Joshua Cochran
+- Jack Williams
 
-# 
-
-# \## How to Run
-
-# 
-
-# Install dependencies:
-
-# 
-
-# ```bash
-
-# pip install -r requirements.txt
-
+Indiana University  
+MSDS – Applied Database Technologies
