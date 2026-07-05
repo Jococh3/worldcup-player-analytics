@@ -1,6 +1,5 @@
 # ⚽ World Cup Player Analytics
 
-<<<<<<< HEAD
 Final project for **DSCI-D532 Applied Database Technologies**.
 
 ## Project Overview
