@@ -1,70 +1,54 @@
-# \# World Cup Player Analytics
+# ⚽ World Cup Player Analytics
 
-# 
+Final project for **DSCI-D532 Applied Database Technologies** at Indiana University.
 
-# Final project for DSCI-D532 Applied Database Technologies.
+## Overview
 
-# 
+This application provides an interactive dashboard for exploring FIFA World Cup player performance data. Users can search players, analyze statistics, visualize trends, and create scouting notes.
 
-# \## Project Overview
+## Features
 
-# 
+- Interactive dashboard
+- Plotly visualizations
+- Player search and filtering
+- Individual player profiles
+- Match history
+- Performance charts
+- Scouting Notes CRUD functionality
+- Responsive Bootstrap interface
 
-# World Cup Player Analytics is a Flask-based web application for exploring FIFA World Cup player performance data. The app allows users to view dashboard summaries, search players, inspect individual player profiles, visualize performance trends, and create scouting notes.
+## Technologies
 
-# 
+- Python
+- Flask
+- Pandas
+- Plotly
+- Bootstrap
+- SQLite (development)
+- PostgreSQL (planned)
 
-# \## Current Features
+## Running the Project
 
-# 
+Install dependencies:
 
-# \- Dashboard with player, team, and match totals
+```bash
+pip install -r requirements.txt
+```
 
-# \- Interactive Plotly visualizations
+Start the application:
 
-# \- Player search and position filtering
+```bash
+python app.py
+```
 
-# \- Individual player detail pages
+Open your browser:
 
-# \- Player match history tables
+```
+http://127.0.0.1:5000
+```
 
-# \- Player performance chart by match
+## Authors
 
-# \- Scouting Notes CRUD functionality
+Joshua Cochran
 
-# \- Bootstrap-styled interface
-
-# 
-
-# \## Technologies Used
-
-# 
-
-# \- Python
-
-# \- Flask
-
-# \- Pandas
-
-# \- Plotly
-
-# \- Bootstrap
-
-# \- SQLite for development CRUD prototype
-
-# \- PostgreSQL planned for final database implementation
-
-# 
-
-# \## How to Run
-
-# 
-
-# Install dependencies:
-
-# 
-
-# ```bash
-
-# pip install -r requirements.txt
-
+Indiana University MS Data Science
