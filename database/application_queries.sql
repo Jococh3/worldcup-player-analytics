@@ -1,17 +1,17 @@
 -- =========================================================
 -- WORLD CUP PLAYER ANALYTICS
--- APPLICATION QUERIES
+-- Application Queries
 -- Author: Joshua Cochran
 --
--- These queries support the Flask dashboard, player search,
--- player detail pages, visualizations, and scouting notes.
+-- These are the main SQL queries used by my Flask application
+-- for the dashboard, player pages, charts, and scouting notes.
 -- =========================================================
 
 
 -- =========================================================
 -- 1. DASHBOARD SUMMARY COUNTS
 -- Author: Joshua Cochran
--- Returns the total number of players, teams, and matches.
+-- Gets the totals shown on the dashboard.
 -- =========================================================
 
 SELECT
@@ -23,7 +23,7 @@ SELECT
 -- =========================================================
 -- 2. TOP 10 TEAMS BY TOTAL GOALS
 -- Author: Joshua Cochran
--- Used for the dashboard team-goals bar chart.
+-- Shows the top scoring teams on the dashboard.
 -- =========================================================
 
 SELECT
@@ -45,7 +45,7 @@ LIMIT 10;
 -- =========================================================
 -- 3. AVERAGE PLAYER RATING BY POSITION
 -- Author: Joshua Cochran
--- Used for the dashboard position-rating chart.
+-- Calculates the average rating for each position.
 -- =========================================================
 
 SELECT
@@ -61,9 +61,9 @@ ORDER BY
 
 
 -- =========================================================
--- 4. MARKET VALUE VS. TOURNAMENT RATING
+-- 4. MARKET VALUE VS TOURNAMENT RATING
 -- Author: Joshua Cochran
--- Used for the interactive dashboard scatter plot.
+-- Used to compare player value with tournament rating.
 -- =========================================================
 
 SELECT
@@ -87,7 +87,7 @@ ORDER BY
 -- =========================================================
 -- 5. DISPLAY ALL PLAYERS
 -- Author: Joshua Cochran
--- Returns one row per player for the player search page.
+-- Displays the player list on the search page.
 -- =========================================================
 
 SELECT
@@ -111,7 +111,8 @@ LIMIT 50;
 -- =========================================================
 -- 6. SEARCH PLAYERS BY NAME
 -- Author: Joshua Cochran
--- Replace 'Rodri' with a value supplied by the Flask form.
+-- Example search. Flask replaces "Rodri" with whatever the
+-- user types into the search box.
 -- =========================================================
 
 SELECT
@@ -136,7 +137,7 @@ ORDER BY
 -- =========================================================
 -- 7. FILTER PLAYERS BY POSITION
 -- Author: Joshua Cochran
--- Replace 'Forward' with a value supplied by the Flask form.
+-- Filters the player list by position.
 -- =========================================================
 
 SELECT
@@ -161,7 +162,7 @@ ORDER BY
 -- =========================================================
 -- 8. PLAYER PROFILE INFORMATION
 -- Author: Joshua Cochran
--- Replace P00055 with the selected player ID.
+-- Loads all the information for one player.
 -- =========================================================
 
 SELECT
@@ -194,7 +195,7 @@ WHERE
 -- =========================================================
 -- 9. PLAYER PERFORMANCE SUMMARY
 -- Author: Joshua Cochran
--- Calculates summary cards for the player detail page.
+-- Creates the summary stats shown at the top of a player's page.
 -- =========================================================
 
 SELECT
@@ -218,7 +219,7 @@ GROUP BY
 -- =========================================================
 -- 10. PLAYER MATCH HISTORY
 -- Author: Joshua Cochran
--- Used for the table and performance chart on player pages.
+-- Pulls every match the selected player appeared in.
 -- =========================================================
 
 SELECT
@@ -243,7 +244,7 @@ ORDER BY
 -- =========================================================
 -- 11. TOP 10 GOAL SCORERS
 -- Author: Joshua Cochran
--- Identifies the highest-scoring players in the dataset.
+-- Finds the players with the most goals.
 -- =========================================================
 
 SELECT
@@ -268,7 +269,7 @@ LIMIT 10;
 -- =========================================================
 -- 12. TEAM PERFORMANCE SUMMARY
 -- Author: Joshua Cochran
--- Provides team-level statistics for a future team page.
+-- Team summary statistics.
 -- =========================================================
 
 SELECT
@@ -292,7 +293,7 @@ ORDER BY
 -- =========================================================
 -- 13. STADIUM MATCH COUNTS
 -- Author: Joshua Cochran
--- Returns the number of matches associated with each stadium.
+-- Counts how many matches were played at each stadium.
 -- =========================================================
 
 SELECT
@@ -313,7 +314,7 @@ ORDER BY
 -- =========================================================
 -- 14. READ ALL SCOUTING NOTES
 -- Author: Joshua Cochran
--- Displays existing notes with player information.
+-- Shows every scouting note that has been created.
 -- =========================================================
 
 SELECT
@@ -338,7 +339,7 @@ ORDER BY
 -- =========================================================
 -- 15. CREATE A SCOUTING NOTE
 -- Author: Joshua Cochran
--- Demonstrates the Create portion of CRUD.
+-- Adds a new scouting note.
 -- =========================================================
 
 INSERT INTO scouting_notes (
@@ -356,8 +357,7 @@ VALUES (
 -- =========================================================
 -- 16. UPDATE A SCOUTING NOTE
 -- Author: Joshua Cochran
--- Demonstrates the Update portion of CRUD.
--- Replace note_id 1 with an existing note ID.
+-- Updates an existing scouting note.
 -- =========================================================
 
 UPDATE scouting_notes
@@ -371,8 +371,7 @@ WHERE
 -- =========================================================
 -- 17. DELETE A SCOUTING NOTE
 -- Author: Joshua Cochran
--- Demonstrates the Delete portion of CRUD.
--- Replace note_id 1 with the note that should be deleted.
+-- Deletes a scouting note.
 -- =========================================================
 
 DELETE FROM scouting_notes

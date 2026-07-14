@@ -24,23 +24,23 @@ Users can search players, analyze performance trends, view individual player pro
 
 ### Dashboard Overview
 
-![Dashboard Overview](screenshots/Dashboard Prototype 1.png)
+![Dashboard Overview](screenshots/Dashboard%20Prototype%201.png)
 
 ### Dashboard Analytics
 
-![Dashboard Analytics](screenshots/Dashboard Prototype 2.png)
+![Dashboard Analytics](screenshots/Dashboard%20Prototype%202.png)
 
 ### Player Details
 
-![Player Details](screenshots/Player Details 1.png)
+![Player Details](screenshots/Player%20Details%201.png)
 
 ### Additional Player Details
 
-![Player Details](screenshots/Player Details 2.png)
+![Additional Player Details](screenshots/Player%20Details%202.png)
 
 ### Scouting Notes (CRUD)
 
-![Scouting Notes](screenshots/Scouting Notes CRUD.png)
+![Scouting Notes](screenshots/Scouting%20Notes%20CRUD.png)
 
 ---
 
